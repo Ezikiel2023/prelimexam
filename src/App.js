@@ -73,7 +73,7 @@ function App() {
         <CalButton label={"+"} onClick={handleButtonClick} />
       </div>
       <div className="ButtonContainer">
-      <CalButton label={"EZIKEIL"} onClick={() => {}} />
+      <CalButton label={"EZIKIEL"} onClick={() => {}} />
       </div>
       <h1 className="Footer">My Calculator</h1>
     </div>
