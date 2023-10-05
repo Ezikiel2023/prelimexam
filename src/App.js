@@ -74,7 +74,7 @@ function App() {
       </div>
       <div className="ButtonContainer">
       <CalButton label={"MANESE"} onClick={() => {}} />
-      </div
+      </div>
    <h1 className="Footer">Calculator of Ezikiel Dizon Manese IT3A</h1>
     </div>
   );
