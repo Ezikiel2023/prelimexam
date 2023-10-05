@@ -9,10 +9,10 @@ function CalButton({ label, onClick }) {
   );
 }
 
-function CalDisplay({ display }) {
+function CalDisplay({ Display }) {
   return (
     <div className='CalDisplay'>
-      {display}
+      {Display}
     </div>
   );
 }
@@ -47,7 +47,7 @@ function App() {
  return (
   <div className='CalContainer'>
  <h1 className='Header'>Calculator of Ezikiel D. Manese IT3A</h1>
-      <CalDisplay display={expressionValue} />
+      <CalDisplay Display={expressionValue} />
       <div className='ButtonContainer'>
         <CalButton label={7} onClick={handleButtonClick} />
         <CalButton label={8} onClick={handleButtonClick} />
