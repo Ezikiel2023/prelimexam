@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div className='CalcContainer'>
-     <h1 className="Footer">"Calculator of Ezikiel D. Manese IT3A"</h1>
+     <h1 className="Footer">Calculator of Ezikiel Dizon Manese IT3A</h1>
       <CalcDisplay expression={expression} />
       <div className='ButtonContainer'>
         <CalButton label={7} onClick={handleButtonClick} />
