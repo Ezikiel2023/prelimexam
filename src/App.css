@@ -40,19 +40,6 @@ body {
   color: #fff;
 }
 
-@keyframes changeColor {
-  0%,
-  100% {
-    border-color: #0f0bea;
-  }
-  25% {
-    border-color: peachpuff;
-  }
-  50% {
-    border-color: gray;
-  }
-  75% {
-    border-color: violet;
-  }
+h1:hover {
+  background-color: green;
 }
-
