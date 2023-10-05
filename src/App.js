@@ -37,6 +37,10 @@ function App() {
       
       setExpressionValue('');
       setCalculation('');
+    }
+      
+    else if (value === 'MANESE') {
+    setExpressionValue('Ezikiel D. Manese');
     } else {
     
       setCalculation((prevCalculation) => prevCalculation + value);
