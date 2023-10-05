@@ -54,7 +54,7 @@ body {
   min-height: 100vh;
   background: linear-gradient(45deg, #23395d, #203354, #1c2e4a, #192841, #152238);
   background-size: 400% 400%;
-  animation: darkkulur 10s ease infinite;
+  animation: darkkulur 5s ease infinite;
 }
 
 @keyframes darkkulur {
