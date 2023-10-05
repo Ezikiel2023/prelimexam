@@ -53,6 +53,7 @@ function App() {
 
   return (
     <div className='CalcContainer'>
+     <h1 className="Footer">My Calculator</h1>
       <CalcDisplay expression={expression} />
       <div className='ButtonContainer'>
         <CalButton label={7} onClick={handleButtonClick} />
