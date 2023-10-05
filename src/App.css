@@ -63,7 +63,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 .CalDisplay:hover {
-  background-color: yellow;
+  background-color: grey;
 }
 
 h1{
