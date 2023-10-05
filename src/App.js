@@ -60,7 +60,7 @@ function App() {
         <CalButton label={4} onClick={handleButtonClick} />
         <CalButton label={5} onClick={handleButtonClick} />
         <CalButton label={6} onClick={handleButtonClick} />
-        <CalButton label="x" onClick={handleButtonClick} />
+        <CalButton label="*" onClick={handleButtonClick} />
         <CalButton label={1} onClick={handleButtonClick} />
         <CalButton label={2} onClick={handleButtonClick} />
         <CalButton label={3} onClick={handleButtonClick} />
