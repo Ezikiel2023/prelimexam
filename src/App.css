@@ -52,7 +52,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(45deg, #2e1f15, #292c1b);
+  background: linear-gradient(45deg, #221f1f, #242726, #2e3233);
   background-size: 400% 400%;
   animation: darkkulur 10s ease infinite;
 }
