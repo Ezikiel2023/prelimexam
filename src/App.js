@@ -56,19 +56,19 @@ function App() {
         <CalButton label={7} onClick={handleButtonClick} />
         <CalButton label={8} onClick={handleButtonClick} />
         <CalButton label={9} onClick={handleButtonClick} />
-        <CalButton label="+" onClick={handleButtonClick} />
+        <CalButton label="/" onClick={handleButtonClick} />
         <CalButton label={4} onClick={handleButtonClick} />
         <CalButton label={5} onClick={handleButtonClick} />
         <CalButton label={6} onClick={handleButtonClick} />
-        <CalButton label="-" onClick={handleButtonClick} />
+        <CalButton label="x" onClick={handleButtonClick} />
         <CalButton label={1} onClick={handleButtonClick} />
         <CalButton label={2} onClick={handleButtonClick} />
         <CalButton label={3} onClick={handleButtonClick} />
-        <CalButton label="*" onClick={handleButtonClick} />
+        <CalButton label="-" onClick={handleButtonClick} />
         <CalButton label="C" onClick={handleButtonClick} />
         <CalButton label={0} onClick={handleButtonClick} />
         <CalButton label="=" onClick={handleButtonClick} />
-        <CalButton label="/" onClick={handleButtonClick} />
+        <CalButton label="+" onClick={handleButtonClick} />
      </div>
      <div className='ButtonContainer'>
         <CalButton label="MANESE" onClick={handleButtonClick} />
