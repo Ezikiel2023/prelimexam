@@ -1,13 +1,15 @@
 .App {
   text-align: center;
 }
+
 .CalcDisplay {
   height: 40px;
   font-size: 2em;
   background-color: aqua;
   color: red;
 }
- .CalcContainer {
+
+.CalcContainer {
   top: 50%;
   left: 50%;
   position: absolute;
@@ -16,47 +18,45 @@
   width: 700px;
   text-align: center;
   border: 10px solid black;
-  background: pink;
+  background: linear-gradient(to bottom right, pink, lightblue);
   border-radius: 10px;
-  
- }
+  animation: changeColor 5s linear infinite;
+}
 
- .ButtonContainer{
+.ButtonContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(60px, auto);
+}
 
- }
- body {
+body {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  animation: changeColor 5s linear infinite; /* Change color every 4 seconds */
-  background-color: #3498db; /* Initial background color */
-  color: #fff; /* Text color */
+  background-color: #3498db;
+  color: #fff;
 }
 
 @keyframes changeColor {
-  0%, 100% {
-    background-color: #0f0bea; /* Initial color */
+  0%,
+  100% {
+    border-color: #0f0bea;
   }
   25% {
-    background-color: peachpuff; /* Color 1 */
+    border-color: peachpuff;
   }
   50% {
-    background-color: gray; /* Color 2 */
+    border-color: gray;
   }
   75% {
-    background-color: violet; /* Color 3 */
+    border-color: violet;
   }
 }
 
-
 .Surname {
-  display:flex;
+  display: flex;
   justify-content: center;
-
 }
