@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div className='CalcContainer'>
-      <h1 className="Footer">Calculator of Ezikiel Dizon Manese IT3A</h1>
+      <h1 className="Header">Calculator of Ezikiel Dizon Manese IT3A</h1>
       <CalcDisplay expression={expression} />
       <div className='ButtonContainer'>
         <CalButton label={7} onClick={handleButtonClick} />
@@ -70,8 +70,8 @@ function App() {
         <CalButton label={"-"} onClick={handleButtonClick} />
         <CalButton label={"C"} onClick={handleButtonClick} />
         <CalButton label={0} onClick={handleButtonClick} />
-        <c><CalButton label={"="} onClick={handleButtonClick} />
-        <c><CalButton label={"+"} onClick={handleButtonClick} /></c>
+>        <c><CalButton label={"="} onClick={handleButtonClick} /></c>
+        <CalButton label={"+"} onClick={handleButtonClick} />
       </div>
       <div className="ButtonContainer">
       <CalButton label={"MANESE"} onClick={() => {}} />
