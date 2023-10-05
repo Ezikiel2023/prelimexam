@@ -17,7 +17,7 @@
   margin: 0 auto;
   width: 700px;
   text-align: center;
-  border: 30px solid black;
+  border: 7px double black;
   border-radius: 10px;
   animation: moveColor 5s linear infinite;
 }
