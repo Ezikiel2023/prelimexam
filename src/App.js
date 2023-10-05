@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-function CalcButton({ label, onClick }) {
+function CalButton({ label, onClick }) {
   return (
     <button onClick={() => onClick(label)}>
       {label}
@@ -9,7 +9,7 @@ function CalcButton({ label, onClick }) {
   );
 }
 
-function CalcDisplay({ display }) {
+function CalDisplay({ display }) {
   return (
     <div className='CalcDisplay'>
       {display}
@@ -50,31 +50,29 @@ function App() {
 
  return (
   <div className='App'>
- <h1 className='CalculatorTitle'>Calculator of Ezikiel D. Manese IT3A</h1>
+ <h1 className='Header'>Calculator of Ezikiel D. Manese IT3A</h1>
       <CalcDisplay display={displayValue} />
       <div className='ButtonContainer'>
-        <CalcButton label={7} onClick={handleButtonClick} />
-        <CalcButton label={8} onClick={handleButtonClick} />
-        <CalcButton label={9} onClick={handleButtonClick} />
-        <CalcButton label="+" onClick={handleButtonClick} />
-        <CalcButton label={4} onClick={handleButtonClick} />
-        <CalcButton label={5} onClick={handleButtonClick} />
-        <CalcButton label={6} onClick={handleButtonClick} />
-        <CalcButton label="-" onClick={handleButtonClick} />
-        <CalcButton label={1} onClick={handleButtonClick} />
-        <CalcButton label={2} onClick={handleButtonClick} />
-        <CalcButton label={3} onClick={handleButtonClick} />
-        <CalcButton label="*" onClick={handleButtonClick} />
-        <CalcButton label="C" onClick={handleButtonClick} />
-        <CalcButton label={0} onClick={handleButtonClick} />
-        <CalcButton label="=" onClick={handleButtonClick} />
-        <CalcButton label="/" onClick={handleButtonClick} />
-
-         {/* Surname button */}
-         <div className='LastNameButton'>
-         <CalcButton label="Manese" onClick={handleButtonClick} />
-         </div>
-      </div>
+        <CalButton label={7} onClick={handleButtonClick} />
+        <CalButton label={8} onClick={handleButtonClick} />
+        <CalButton label={9} onClick={handleButtonClick} />
+        <CalButton label="+" onClick={handleButtonClick} />
+        <CalButton label={4} onClick={handleButtonClick} />
+        <CalButton label={5} onClick={handleButtonClick} />
+        <CalButton label={6} onClick={handleButtonClick} />
+        <CalButton label="-" onClick={handleButtonClick} />
+        <CalButton label={1} onClick={handleButtonClick} />
+        <CalButton label={2} onClick={handleButtonClick} />
+        <CalButton label={3} onClick={handleButtonClick} />
+        <CalButton label="*" onClick={handleButtonClick} />
+        <CalButton label="C" onClick={handleButtonClick} />
+        <CalButton label={0} onClick={handleButtonClick} />
+        <CalButton label="=" onClick={handleButtonClick} />
+        <CalButton label="/" onClick={handleButtonClick} />
+     </div>
+     <div className='LastNameButton'>
+        <CalButton label="{"MANESE"} onClick={handleButtonClick} />
+     </div>
     </div>
   );
 }
