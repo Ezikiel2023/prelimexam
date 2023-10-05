@@ -44,14 +44,13 @@ function App() {
     }
   };
   const handleSurnameButtonClick = () => {
-    // Add your full name to the display
     setDisplayValue('Kenneth Clark G. Auguis');
   };
 
 
-  return (
-    <div className='CalcContainer'>
- <h1 className='CalculatorTitle'>Calculator of Kenneth Clark G. Auguis - IT3A</h1>
+ return (
+  <div className='App'>
+ <h1 className='CalculatorTitle'>Calculator of Ezikiel D. Manese IT3A</h1>
       <CalcDisplay display={displayValue} />
       <div className='ButtonContainer'>
         <CalcButton label={7} onClick={handleButtonClick} />
@@ -72,8 +71,8 @@ function App() {
         <CalcButton label="/" onClick={handleButtonClick} />
 
          {/* Surname button */}
-         <div className='Surname'>
-         <CalcButton label="AUGUIS" onClick={handleSurnameButtonClick} />
+         <div className='LastNameButton'>
+         <CalcButton label="Manese" onClick={handleButtonClick} />
          </div>
       </div>
     </div>
