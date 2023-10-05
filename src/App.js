@@ -9,16 +9,16 @@ function CalButton({ label, onClick }) {
   );
 }
 
-function CalDisplay({ expression }) {
+function CalDisplay({ Display }) {
   return (
     <div className='CalDisplay'>
-      {expression}
+      {Display}
     </div>
   );
 }
 
 function App() {
-  const [expression, setExpression] = useState('');
+  const [expressionValue, setExpressionValue] = useState('');
   const [calculation, setCalculation] = useState('');
 
   const handleButtonClick = (value) => {
@@ -26,28 +26,28 @@ function App() {
       try {
         
         const result = eval(calculation);
-        setExpression(result.toString());
+        setExpressionValue(result.toString());
         setCalculation(result.toString());
       } catch (error) {
         
-        setExpression('Error');
+        setExpressionValue('Error');
         setCalculation('');
       }
     } else if (value === 'C') {
       
-      setExpression('');
+      setExpressionValue('');
       setCalculation('');
     } else {
     
       setCalculation((prevCalculation) => prevCalculation + value);
-      setExpression((prevExpression) => prevExpression + value);
+      setExpressionValue((prevExpression) => prevExpressionValue + value);
     }
   };
 
  return (
   <div className='CalContainer'>
  <h1 className='Header'>Calculator of Ezikiel D. Manese IT3A</h1>
-      <CalDisplay display={expression} />
+      <CalDisplay display={expressionValue} />
       <div className='ButtonContainer'>
         <CalButton label={7} onClick={handleButtonClick} />
         <CalButton label={8} onClick={handleButtonClick} />
