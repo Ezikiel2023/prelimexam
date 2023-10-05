@@ -7,7 +7,7 @@
 }
 
 .CalcDisplay {
-  color: #38044d;
+  color:  #38044d;
   background-color: rgba(194, 194, 31, 0.692);
   height: 70px;
   text-align: center;
@@ -42,7 +42,7 @@ button:nth-child(15) {
   grid-column: span 2;
 }
 
-body {
+body{
   background-color: #38044d;
 }
 
@@ -50,7 +50,7 @@ button:nth-child(16) {
   grid-column: span 2;
 }
 
-.Header {
+.Footer {
   margin-top: 20px;
   text-align: center;
   font-size: 69px;
