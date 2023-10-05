@@ -70,11 +70,13 @@ function App() {
         <CalButton label={"-"} onClick={handleButtonClick} />
         <CalButton label={"C"} onClick={handleButtonClick} />
         <CalButton label={0} onClick={handleButtonClick} />
-        <c><CalButton label={"="} onClick={handleButtonClick} /></c>
+        <div className='EqualButton'>
+          <CalButton label={"="} onClick={handleButtonClick} />
+        </div>
         <CalButton label={"+"} onClick={handleButtonClick} />
       </div>
       <div className="ButtonContainer">
-      <CalButton label={"MANESE"} onClick={() => {}} />
+        <CalButton label={"MANESE"} onClick={() => {}} />
       </div>
     </div>
   );
