@@ -43,15 +43,11 @@ function App() {
       setDisplayValue((prevDisplayValue) => prevDisplayValue + buttonLabel);
     }
   };
-  const handleSurnameButtonClick = () => {
-    setDisplayValue('Kenneth Clark G. Auguis');
-  };
-
 
  return (
   <div className='App'>
  <h1 className='Header'>Calculator of Ezikiel D. Manese IT3A</h1>
-      <CalcDisplay display={displayValue} />
+      <CalDisplay display={displayValue} />
       <div className='ButtonContainer'>
         <CalButton label={7} onClick={handleButtonClick} />
         <CalButton label={8} onClick={handleButtonClick} />
@@ -70,8 +66,8 @@ function App() {
         <CalButton label="=" onClick={handleButtonClick} />
         <CalButton label="/" onClick={handleButtonClick} />
      </div>
-     <div className='LastNameButton'>
-        <CalButton label="{"MANESE"} onClick={handleButtonClick} />
+     <div className='ButtonContainer'>
+        <CalButton label="{"MANESE"} onClick={() => {}} />
      </div>
     </div>
   );
