@@ -67,7 +67,7 @@ function App() {
         <CalButton label="/" onClick={handleButtonClick} />
      </div>
      <div className='ButtonContainer'>
-        <CalButton label="{"MANESE"} onClick={() => {}} />
+        <c><CalButton label="{"MANESE"} onClick={() => {}} /></c>
      </div>
     </div>
   );
