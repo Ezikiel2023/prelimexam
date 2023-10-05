@@ -9,10 +9,10 @@ function CalButton({ label, onClick }) {
   );
 }
 
-function CalDisplay({ Display }) {
+function CalDisplay({ display }) {
   return (
     <div className='CalDisplay'>
-      {Display}
+      {display}
     </div>
   );
 }
@@ -40,7 +40,7 @@ function App() {
     } else {
     
       setCalculation((prevCalculation) => prevCalculation + value);
-      setExpressionValue((prevExpression) => prevExpressionValue + value);
+      setExpressionValue((prevExpression) => prevExpression + value);
     }
   };
 
@@ -67,7 +67,7 @@ function App() {
         <CalButton label="/" onClick={handleButtonClick} />
      </div>
      <div className='ButtonContainer'>
-        <c><CalButton label="{"MANESE"} onClick={() => {}} /></c>
+        <CalButton label="{"MANESE"} onClick={() => {}} />
      </div>
     </div>
   );
