@@ -7,7 +7,7 @@
 }
 
 .CalcDisplay {
-  color:  #38044d;
+  color: #38044d;
   background-color: rgba(194, 194, 31, 0.692);
   height: 70px;
   text-align: center;
@@ -17,9 +17,13 @@
 
 .ButtonContainer {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
   margin-top: 20px;
+}
+
+.EqualButton {
+  grid-column: span 2;
 }
 
 .CalButton {
@@ -42,12 +46,8 @@ button:nth-child(15) {
   grid-column: span 2;
 }
 
-body{
+body {
   background-color: #38044d;
-}
-
-button:nth-child(16) {
-  grid-column: span 2;
 }
 
 .Footer {
