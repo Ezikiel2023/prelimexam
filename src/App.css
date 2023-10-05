@@ -26,6 +26,18 @@
   background: linear-gradient(to bottom right, pink, lightblue);
 }
 
+@keyframes changeColor {
+  0% {
+    background-color: pink;
+  }
+  50% {
+    background-color: lightblue;
+  }
+  100% {
+    background-color: pink;
+  }
+}
+
 .ButtonContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
