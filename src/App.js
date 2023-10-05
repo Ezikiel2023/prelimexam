@@ -9,38 +9,38 @@ function CalButton({ label, onClick }) {
   );
 }
 
-function CalDisplay({ display }) {
+function CalDisplay({ expression }) {
   return (
-    <div className='CalcDisplay'>
-      {display}
+    <div className='CalDisplay'>
+      {expression}
     </div>
   );
 }
 
 function App() {
-  const [displayValue, setDisplayValue] = useState('');
+  const [expression, setExpression] = useState('');
   const [calculation, setCalculation] = useState('');
 
-  const handleButtonClick = (buttonLabel) => {
-    if (buttonLabel === '=') {
+  const handleButtonClick = (value) => {
+    if (value === '=') {
       try {
         
         const result = eval(calculation);
-        setDisplayValue(result.toString());
+        setExpression(result.toString());
         setCalculation(result.toString());
       } catch (error) {
         
-        setDisplayValue('Error');
+        setExpression('Error');
         setCalculation('');
       }
-    } else if (buttonLabel === 'C') {
+    } else if (value === 'C') {
       
-      setDisplayValue('');
+      setExpression('');
       setCalculation('');
     } else {
     
-      setCalculation((prevCalculation) => prevCalculation + buttonLabel);
-      setDisplayValue((prevDisplayValue) => prevDisplayValue + buttonLabel);
+      setCalculation((prevCalculation) => prevCalculation + value);
+      setExpression((prevExpression) => prevExpression + value);
     }
   };
 
