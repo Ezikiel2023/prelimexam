@@ -1,4 +1,4 @@
-App {
+.App {
   text-align: center;
 }
 
@@ -18,9 +18,12 @@ App {
   width: 700px;
   text-align: center;
   border: 10px solid black;
-  background: linear-gradient(to bottom right, pink, lightblue);
   border-radius: 10px;
   animation: changeColor 5s linear infinite;
+  background: -webkit-linear-gradient(top left, pink, lightblue);
+  background: -moz-linear-gradient(top left, pink, lightblue);
+  background: -o-linear-gradient(top left, pink, lightblue);
+  background: linear-gradient(to bottom right, pink, lightblue);
 }
 
 .ButtonContainer {
@@ -40,6 +43,6 @@ body {
   color: #fff;
 }
 
-CalDisplay:hover {
+.CalDisplay:hover {
   background-color: yellow;
 }
