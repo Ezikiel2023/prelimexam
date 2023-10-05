@@ -20,6 +20,7 @@
   border: 10px solid black;
   border-radius: 10px;
   animation: changeColor 5s linear infinite;
+  animation: moveColor 5s linear infinite;
   background: -webkit-linear-gradient(top left, pink, lightblue);
   background: -moz-linear-gradient(top left, pink, lightblue);
   background: -o-linear-gradient(top left, pink, lightblue);
@@ -35,6 +36,23 @@
   }
   100% {
     background-color: pink;
+  }
+}
+@keyframes moveColor {
+  0% {
+    border-color: red;
+  }
+  25% {
+    border-color: blue;
+  }
+  50% {
+    border-color: green;
+  }
+  75% {
+    border-color: yellow;
+  }
+  100% {
+    border-color: red;
   }
 }
 
